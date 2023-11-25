@@ -1,0 +1,15 @@
+from datetime import datetime
+
+# Take input from the user
+timestamp_input = input("Enter the timestamp in nanoseconds: ")
+
+try:
+    # Convert input to a float (assuming it's in nanoseconds)
+    timestamp = float(timestamp_input) / 1e9
+    human_readable_date = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S UTC')
+    print("Human-readable date and time:", human_readable_date)
+
+except ValueError:
+    print("Invalid input. Please enter a valid numeric timestamp.")
+
+
