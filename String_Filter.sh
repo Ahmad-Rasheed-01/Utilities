@@ -1,7 +1,6 @@
 #!/bin/bash
 #String filter for $APPL_TOP file
 #Version: 0.5
-#!/bin/bash
 
 # Check if the file argument is provided
 if [ -z "$1" ]; then
